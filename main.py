@@ -19,7 +19,7 @@ search_response = youtube.search().list(
     type='video',
     part='id,snippet',
     fields='items(id(videoId),snippet(channelId,title,description,publishedAt))',
-    maxResults=50
+    maxResults=100000
 ).execute()
 
 # Collect the video links from the search results
